@@ -301,6 +301,10 @@ body{
         border-radius: 999px;
         box-shadow: none;
     }
+	.game-panel{
+        display: flex;
+        justify-content: center;
+    }
 }
 .open{
     display: flex !important;
