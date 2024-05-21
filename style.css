@@ -305,6 +305,9 @@ body{
 .open{
     display: flex !important;
 }
+.game-container{
+    margin-top: 40px;
+}
 @keyframes BurgerAnimation {
     from{opacity: 0;}
     to{opacity: 1;}
