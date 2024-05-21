@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Игра «Угадай мое число»</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_wrapper">
+        <button type="button" class="btn btn_again">Играть снова</button>
+        <p>От 1 до 20</p>
+      </div>
+      <h2>Игра «Угадай мое число»</h2>
+      <p class="hide_num">?</p>
+      <p class="message">Начните........</p>
+      <div class="number_data">
+        <form>
+          <input
+            type="number"
+            placeholder="Введите свое число!"
+            class="input_number"
+          />
+          <button type="button" class="btn btn_check">Проверить сейчас!</button>
+        </form>
+        <div class="content">
+          <p>Результат: <span class="score">20</span></p>
+          <p>Высокий балл: <span class="high_score">20</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
