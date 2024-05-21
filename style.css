@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F9FAEF;
+}
+.content-container{
+    margin: 0 54px;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+}
+.navbar .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar-menu li{
+    display: inline-block;
+}
+.navbar-menu li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    opacity: 0.7;
+}
+.navbar-menu li a:hover{
+    opacity: 1;
+}
+.navbar-wrap{
+    font-size: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: 'Libre Franklin';
+}
+.register{
+    margin-left: 30px;
+    padding: 10px 24px;
+    background-color: #476730;
+    color:white;
+    text-decoration: none;
+    border-radius: 999px;
+    box-shadow: 0 4px 6px #476730;
+    transition: all .1 ease-in-out;
+}
+.register:hover{
+    transform: scale(1.04);
+}
+.navbar-brand{
+    font-size: 32px;
+    font-family: 'Newsreader', sans-serif;
+    text-decoration: none;
+    color: black;
+    transition: all .07s ease-in-out;
+}
+
+
+
+/* Инфо панель + Поиск */
+
+.pois{
+    background-color: #C3CEB7;
+    border: none;
+    border-radius: 12px;
+    width: 200px;
+    height: 48px;
+    margin-top: 35px;
+}
+.pois::placeholder{
+    padding: 0 90px;
+    color: black;
+}
+.panel-container{
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+}
+.info-panel{
+    display:flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.description{
+    padding-left: 30px;
+    font-family: 'Libre Franklin';
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.panel-logo{
+    font-family: 'Newsreader', sans-serif;
+    font-size: 64px;
+}
+.panel{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Карточки */
+.game-panel{
+    margin-top: 70px;
+    /* box-shadow: 0 0 10px black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.game-container{
+    background-color: #EDEFE4;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.game-container .game-img img{
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+.game-name{
+    font-family: 'Libre Franklin';
+    font-size: 31px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffa50091 ;
+    border-radius: 8px;
+    color:black
+
+}
+.game-button{
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #ffa500b0;
+}
+#game-button{
+    box-shadow: 1px 5px 8px black;
+    margin-top: 20px;
+    width: 200px;
+    height: 63px;
+    background-color: orange;
+    border-radius: 10px;
+    border: 0;
+}
+.game-button button {
+	--c: #fff; /* text color */
+	
+	background: 
+	  linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+	  #E97F02; /* background color */
+	color: #0000;
+	border: none;
+	transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+	text-shadow: 
+	  calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+	  calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+	outline-offset: .1em;
+	transition: 0.3s;
+  }
+  .game-button button:hover,
+  .game-button button:focus-visible {
+	--_p: 0%;
+	--_i: 1;
+  }
+  .game-button button:active {
+	text-shadow: none;
+	color: var(--c);
+	box-shadow: inset 0 0 9e9q #0005;
+	transition: 0s;
+  }
+  
+.game-button button {
+	font-family: system-ui, sans-serif;
+	font-weight:bold;
+	font-size: 20px;
+	margin: 0;
+	cursor: pointer;
+	padding: .1em .3em;
+  }
+
+
+
+
+  
+.info{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+@media (max-width:760px) {
+    .description{
+        display: none;
+    }
+    .navbar-wrap{
+        display: none;
+    }
+}
+@media (max-width:632px) {
+    .pois{
+        width: 100px;
+    }
+    .pois::placeholder{
+        padding: 45px;
+    }
+}
+@media (max-width:519px) {
+    .panel{
+        display:inline;
+    }
+    .pois{
+        width: 100%;
+    }
+    .pois::placeholder{
+        padding: 0 50%;
+    }
+}
