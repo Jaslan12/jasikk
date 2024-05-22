@@ -113,9 +113,8 @@ body{
 /* Карточки */
 .game-panel{
     margin-top: 70px;
-    /* box-shadow: 0 0 10px black; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
